@@ -3,7 +3,13 @@
   background-color: rgb(32, 22, 22);
   display: grid; 
   grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 75px 75px 75px; 
+  grid-template-rows: 75px 75px 75px;
+/*-----------------------------------*/
+  grid-template-areas: 
+    "header header header"
+    "side main main"
+    "side main main";
+/*-----------------------------------*/
   place-content: center;
 }
 
@@ -16,15 +22,29 @@
 .item-1 {
   border: 5px solid #00bcd4;
   background-color: tomato;
+  /**/
+  grid-area: header;
+  /**/
 }
 
 .item-2 {
   border: 5px solid #00bcd4;
   background-color: tomato;
+  /**/
+  grid-area: side;
+  /**/
 }
 
 .item-3 {
   border: 5px solid #00bcd4;
   background-color: tomato;
+  /**/
+  grid-area: main;
+  /**/
 }
 
+/*
+Con grid-template-areas vamos a declarar las areas de nuestra grilla.
+1- Declaramos en nuestro contenedor principal, casi de manera grafica, a que parte pertenece cada celda.
+2- Declaramos en cada item, a que parte de la declaración antes hecha pertenece.
+*/
