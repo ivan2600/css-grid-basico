@@ -1,0 +1,19 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: rgb(32, 22, 22);
+  display: grid; /*Declarar bloque como grid*/
+  grid-template-columns: 100px 100px; /*cada medida que agregue, suma una columna*/
+  grid-template-rows: 100px  100px 100px; /*cada medida que agregue, suma una fila*/
+  grid-auto-columns: 100px; /*cada todas las columnas tendras esta medida*/
+  grid-auto-flow: column; /*cambia la dirección en que se ubican los bloques*/
+  row-gap: 15px; /*espacio entre filas*/
+  column-gap: 15px; /*espacio entre columnas*/
+}
+
+.item {
+  border: 5px solid #00bcd4;
+  background-color: tomato;
+  font-size: 4rem;
+}
+
+/*Hacer reto clase 3*/

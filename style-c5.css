@@ -1,0 +1,54 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: rgb(32, 22, 22);
+  display: grid; 
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 75px 75px 75px; 
+  place-content: center;
+}
+
+/*reto con 3 celdas*/
+
+.item {
+  font-size: 4rem;
+}
+
+.item-1 {
+  border: 5px solid #00bcd4;
+  background-color: tomato;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.item-2 {
+  border: 5px solid #00bcd4;
+  background-color: tomato;
+  grid-row: 2 / 4;
+}
+
+.item-3 {
+  border: 5px solid #00bcd4;
+  background-color: tomato;
+  grid-area: 2 / 2 / 4 / 4;
+  /*
+    
+  */
+}
+
+/*
+  setear donde comienzan y terminan los items:
+
+  grid-column-start: valor 1;
+  grid-column-end: valor 2;
+  grid-column: valor 1 / valor 2;
+
+  grid-row-start: valor 1;
+  grid-row-end: valor 2;
+  grid-row: valor 1 / valor 2;
+
+  grid-area: valor 1 / valor 2 / valor 3 / valor 4;
+      (valor 1: fila comienzo) 
+      (valor 2: columna comienzo) 
+      (valor 3: fila final) 
+      (valor 4: columna final) 
+*/

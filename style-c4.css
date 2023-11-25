@@ -1,0 +1,40 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: rgb(32, 22, 22);
+  display: grid; 
+  grid-gap: 15px;
+  grid-template-columns: 150px 150px;
+  grid-auto-rows: 150px; 
+  height: 600px;
+  place-content: center;
+  place-items: end;
+}
+
+/*reto cumplido con 4 celdas*/
+
+.item {
+  border: 5px solid #00bcd4;
+  background-color: tomato;
+  font-size: 4rem;
+}
+
+
+/*
+  Alinea horizontalemte-->
+
+  justify-content: la grilla completa;
+  justify-items: todos los items del contenedor;
+  justify-self: solo este item;
+
+  Alinea verticalmente-->
+
+  align-content: la grilla completa;
+  align-items: todos los items del contenedor;
+  align-self: solo este item;
+
+  Alinear en ambos sentidos-->
+
+  place-content: la grilla completa;
+  place-items: todos los items del contenedor;
+  place-self: solo este item;
+*/
