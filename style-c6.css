@@ -1,0 +1,25 @@
+.contenedor {
+  border: 5px solid #e1bee7;
+  background-color: rgb(32, 22, 22);
+  display: grid; 
+  grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
+  grid-template-rows: repeat(3, auto);
+}
+
+/*reto con 9 celdas*/
+
+.item {
+  border: 5px solid #00bcd4;
+  background-color: tomato;
+  font-size: 2rem;
+  padding: 15px;
+}
+
+/*
+minmax: reemplaza al "150px" en el grid-template-columns/rows y se escribe así "minmax(30px, 300px)".
+Esto hará que la celda se expanda y contraiga dentro de el minimo y maximo que establecimos.
+
+repeat: en lugar de escribir esto "100px 100px 100px" escribimos esto"repeat(3, 100px)"
+
+auto: la celda se ajusta al contenido.
+*/
